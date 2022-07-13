@@ -35,7 +35,7 @@ router.param("comment", function(req, res, next, id) {
     })
     .catch(next);
 });
-
+// Get item by title
 router.get("/title", auth.optional, function(req, res, next) {
   var query = {};
   var limit = 100;
